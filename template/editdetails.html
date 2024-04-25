@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/updatedetails/{{b.id}}" method="POST">{%csrf_token%}
+    <label>carservicename</label>
+    <input type="text" placeholder="service" name="carservicename" value="{{b.carservicename}}">
+    <br>
+    <br>
+    <label>servicedetails</label>
+    <input type="text" placeholder="details" name="servicedetails" value="{{b.servicedetails}}">
+    <br>
+    <br>
+    <label>servicedescription</label>
+    <input type="text" placeholder="description" name="servicedescription" value="{{b.servicedescription}}">
+    <br>
+    <br>
+    <label>servicetime</label>
+    <input type="text" placeholder="service time" name="servicetime" value="{{b.servicetime}}">
+    <br>
+    <br>
+    <label>serviceamount</label>
+    <input type="text" placeholder="service amount" name="serviceamount" value="{{b.serviceamount}}">
+    <br>
+    <br>
+
+    <input type="submit">
+</form>
+
+</body>
+</html>

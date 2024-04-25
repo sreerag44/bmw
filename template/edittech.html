@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+  <body>
+<form action="/updatetech/{{b.id}}" method="POST">{%csrf_token%}
+    <label>technician name</label>
+    <input type="text" placeholder="enter your name" name="technicianname" value="{{b.technicianname}}">
+    <br>
+    <br>
+    <label>staff number</label>
+    <input type="number" placeholder="enter your number" name="staffnumber" value="{{b.staffnumber}}">
+    <br>
+    <br>
+    <label>staff experience</label>
+    <input type="text" placeholder="enter your experience" name="staffexperience" value="{{b.staffexperience}}">
+    <br>
+    <br>
+    <label>staff dutytime</label>
+    <input type="text" placeholder="enter your dutytime" name="staffdutytime" value="{{b.staffdutytime}}">
+    <br>
+    <br>
+    <label>staff code</label>
+    <input type="text" placeholder="enter your code" name="staffcode" value="{{b.staffcode}}">
+    <br>
+    <br>
+    <label>staff amount</label>
+    <input type="text" placeholder="enter your amount " name="staffamount" value="{{b.staffamount}}">
+    <br>
+    <br>
+    <label>zip</label>
+    <input type="text" placeholder="enter your zip" name="zip" value="{{b.zip}}">
+    <br>
+    <br>
+
+    <input type="submit">
+ </body>
+</html>
